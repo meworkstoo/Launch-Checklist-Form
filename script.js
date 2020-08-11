@@ -38,10 +38,16 @@
    
          if (isNaN(pilotName.value) === false){
             alert("Please enter a name for the Pilot, not a number.");
+         } else {
+            const pilotStatusDiv = document.getElementById("pilotStatus");
+            pilotStatusDiv.innerHTML = `Pilot ${pilotName.value} Ready`
          }
 
          if (isNaN(copilotName.value) === false){
             alert("Please enter a name for the Co-pilot, not a number.");
+         } else {
+            const copilotStatusDiv = document.getElementById("copilotStatus");
+            copilotStatusDiv.innerHTML = `Co-pilot ${copilotName.value} Ready`
          }
 
          if (isNaN(fuelLevel.value) === true){
